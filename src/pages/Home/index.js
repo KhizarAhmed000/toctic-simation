@@ -59,22 +59,24 @@ export default function Home() {
           
           <div className='second-sub-parent'>
             <div className='second-sub-section second-sub-section-1'>
-              <div>Making new friends is as simple as:</div>
-              <div>
-                <img src={redarrow} alt=''></img> Hanging out for lunch
-              </div>
-              <div>
-                <img src={redarrow} alt=''></img> Enjoying a few good books
-              </div>
-              <div>
-                <img src={redarrow} alt=''></img> Exploring the city
-              </div>
-              <div>
-                <img src={redarrow} alt=''></img> Catching a movie together
-              </div>
-              <div>
-                <img src={redarrow} alt=''></img> Grabbing a few drinks
-              </div>    
+              <div className='second-sub-heading'>Making new friends is as simple as:</div>
+              <span className='red-list'>
+                <div>
+                  <img src={redarrow} alt=''></img> Hanging out for lunch
+                </div>
+                <div>
+                  <img src={redarrow} alt=''></img> Enjoying a few good books
+                </div>
+                <div>
+                  <img src={redarrow} alt=''></img> Exploring the city
+                </div>
+                <div>
+                  <img src={redarrow} alt=''></img> Catching a movie together
+                </div>
+                <div>
+                  <img src={redarrow} alt=''></img> Grabbing a few drinks
+                </div>
+              </span>     
             </div>
             <div className='second-sub-section second-sub-section-2'>
               <img src={onephone} alt='' />

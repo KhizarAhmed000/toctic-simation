@@ -20,7 +20,7 @@ nav{
   padding-top: 5%;
   /* background-color: white; */
   width: 99vw;
-  height: 20vh;
+  /* height: 20vh; */
   justify-content: space-between;
   
   /* margin:0; */
@@ -38,7 +38,7 @@ nav{
 }
 .nav-links div{
   color: white;
-  font-size: 1.4em;
+  font-size: 1em;
   padding-left: 3%;
   padding-right: 3%;
   cursor: pointer;
@@ -62,7 +62,7 @@ nav{
 }
 .first-section{
   width: 75vw;
-  height: 80vh;
+  /* height: 80vh; */
   margin-left: 12vw;
   display: flex;
 }
@@ -76,7 +76,7 @@ nav{
 }
 .first-sub-section{
   width: 50%;
-  height: 100%;
+  /* height: 100%; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -88,15 +88,15 @@ nav{
   color: white;
   font-weight: bold;
   width: 100%;
-  height: 50%;
+  /* height: 50%; */
   position: relative;
-  left: 6%;
+  left: 3%;
 }
 
 .first-sub-section div:nth-child(2){
   display: flex;
   position: relative;
-  bottom: 21%;
+  /* bottom: 21%; */
   right:7%;
 }
 .playstorebutton{
@@ -115,7 +115,7 @@ nav{
 
 .second-section{
   width: 70vw;
-  height: 80vh;
+  /* height: 80vh; */
   position: relative;
   top: 3%;
   margin-left: 14.5vw;
@@ -132,7 +132,7 @@ nav{
   position: relative;
   top: 5%;
   
-  height: 20%;
+  /* height: 20%; */
   color: #EA2D53;
   font-size: 500%;
   font-weight: bold;
@@ -141,7 +141,7 @@ nav{
 
 .second-section-text{
   
-  height: 15%;
+  /* height: 15%; */
   border-radius: inherit;
   font-size: 1em;
   position: relative;
@@ -152,15 +152,15 @@ nav{
 
 
 .second-sub-parent{
-  height: 65%;
+  /* height: 65%; */
   
   border-radius: inherit;
   display: flex;
 }
 
 .second-sub-section{
-  width: 50%;
-  height: 100%; 
+  width: 60%;
+  /* height: 100%;  */
 }
 
 .second-sub-section-1{
@@ -174,14 +174,18 @@ nav{
 }
 
 .second-sub-section-1 div{
-  margin-top: 1em;
+  margin-top: 0.5em;
 }
-.second-sub-section-1 div:nth-child(1){
+.second-sub-heading{
   font-style: italic;
   font-size: 170%;
   font-weight: 600;
-  padding-right: 30%;
+  /* padding-right: 30%; */
   text-align: left;
+}
+.red-list{
+  text-align: left;
+  padding-bottom: 15%;
 }
 
 .second-sub-section-1 img{
@@ -193,16 +197,18 @@ nav{
 
 .second-sub-section-2 {
   display: flex;
-  flex-direction: column; /* Ensure a column layout */
+  flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+  margin-right: 5%;
+
 }
 .second-sub-section-2 img{
-  width: 90%;
-  height: 90%;
-  position: relative;
-  top: 1%;
-  right:10%;
+     width: 100%;
+    /* height: 90%; */
+    /* position: relative;
+    top: 7%; */
+    /* right: 10%; */
 }
 
 .third-section{
@@ -335,13 +341,42 @@ input::placeholder{
 }
 
 
-@media screen and (max-width: 800px) {
+
+@media screen and (max-width: 750px) {
+  /* .nav-links {
+    display: none;
+  } */
+
+  .first-sub-section div:nth-child(1){
+    font-size: 25px;
+    
+   }
+
+  /* .second-section-welcome{
+    font-size: 300%;  
+  }
+  .second-section-text{
+    font-size: 0.7em;
+    
+  }  */
+}
+
+@media screen and (max-width: 600px) {
   .nav-links {
     display: none;
   }
 
   .first-sub-section div:nth-child(1){
-    font-size: 20px;
+    font-size: 15px;
+    
+  }
+
+  .second-section-welcome{
+    font-size: 300%;  
+  }
+  .second-section-text{
+    font-size: 0.7em;
     
   }
 }
+
