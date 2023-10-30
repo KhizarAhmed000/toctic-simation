@@ -16,20 +16,21 @@ body {
 
 nav{
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
+  padding-top: 5%;
   /* background-color: white; */
   width: 99vw;
   height: 20vh;
-  justify-content: space-around;
+  justify-content: space-between;
   
-  margin:0;
+  /* margin:0; */
   
   /* margin-right: 11.7vw; */
 }
 .logo{
   width: 10%;
   height: auto;
-  padding-left: 6%;
+  padding-left: 12%;
   position: relative;
   top: 5%;
   cursor: pointer;
@@ -37,11 +38,11 @@ nav{
 }
 .nav-links div{
   color: white;
-  font-size: 15px;
-  padding-left: 20px;
-  padding-right: 20px;
+  font-size: 1.4em;
+  padding-left: 3%;
+  padding-right: 3%;
   cursor: pointer;
-  
+  padding-top: 3%;
 }
 .nav-links{
   display: flex;
@@ -49,14 +50,14 @@ nav{
   align-content: center;
   flex-direction: row;
   width:40%;
-}
+} 
 .logo , .nav-links{
   padding-bottom: 2%;
 }
 .qr-code{
-  height: 100px;
-  width: 100px;
-  padding-right: 93px;
+  height: auto;
+  width: 6%;
+  padding-right: 12%;
   position:relative;
 }
 .first-section{
@@ -68,8 +69,8 @@ nav{
 /*  */
 
 .threephones{
-  width: 550px;
-  height: 500px;
+  width: 100%;
+  height: auto;
   position: relative;
   bottom: 10%;
 }
@@ -99,14 +100,17 @@ nav{
   right:7%;
 }
 .playstorebutton{
-  width: 200px;
+  width: 53%;
+  height: auto;
   cursor: pointer;
+  padding-left: 7%;
 }
 .first-sub-section img:nth-child(2), .third-sub-section-1 img:nth-child(2){
-  width: 200px;
-  height: 55px;
-  padding-top: 12px;
-  cursor: pointer;
+    width: 52%;
+    height: 68%;
+    padding-top: 3.5%;
+    cursor: pointer;
+
 }
 
 .second-section{
@@ -328,4 +332,16 @@ input::placeholder{
 }
 .toctic{
   color: rgba(234, 45, 83, 1);
+}
+
+
+@media screen and (max-width: 800px) {
+  .nav-links {
+    display: none;
+  }
+
+  .first-sub-section div:nth-child(1){
+    font-size: 20px;
+    
+  }
 }
