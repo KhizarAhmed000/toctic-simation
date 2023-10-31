@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import logo from '../../assets/logo.png'
 import qrcode from '../../assets/qrcode.png'
 import appstore from '../../assets/appstorebutton.png'
@@ -18,11 +18,35 @@ import Header from '../../components/Header'
 
 
 export default function Home() {
+  // const [hambergActive, setHambergActive] = useState(false)
+  // function test(){
+  //   alert("ok")
+  // }
+
+  // const hamburger = document.querySelector(".hamburger");
+  // const navMenu = document.querySelector(".nav-links")
+
+  // hamburger.addEventListener("click", () => {
+  //   hamburger.classList.toggle("active")
+  //   navMenu.classList.toggle("active")
+  // })
+
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
+  
+
   return (
+   <> 
     <body>
         <nav>
         
-          <img src={logo} alt='website logo' className='logo' />
+          <img src={logo} alt='website logo' className='logo' 
+          // onClick={test}
+          />
           
           <div className='nav-links'>
             <div>Home</div>
@@ -32,7 +56,14 @@ export default function Home() {
           </div>
           
           <img src={qrcode} alt='qr code' className='qr-code' />
-          
+{/*           
+          <div className="hamburger" onClick={()=>setHambergActive(!hambergActive)}>
+            <span className='bar' ></span>
+            <span className='bar' ></span>
+            <span className='bar' ></span>
+          </div> */}
+
+
         </nav>
         {/* <Header /> */}
 
@@ -118,6 +149,22 @@ export default function Home() {
           
         </div>
 
+        <div className={`burger-container ${menuOpen ? 'open' : ''}`}>
+      <div className="burger-menu" onClick={toggleMenu}>
+        <div className="bar1"></div>
+        <div className="bar2"></div>
+        <div className="bar3"></div>
+      </div>
+
+      <div className="navbar">
+        <a href="#">Home</a>
+        <a href="#">Features</a>
+        <a href="#">Shop</a>
+        <a href="#">Downloads</a>
+      </div>
+    </div>
+
     </body>
+    </>
   )
 }
