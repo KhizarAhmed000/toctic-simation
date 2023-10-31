@@ -4,7 +4,7 @@
 
 
 body {
-    height: 300vh;
+    /* height: 300vh; */
     margin: 0; /* Remove default body margin */
     padding: 0; /* Remove default body padding */
     background-image: url('../../assets/LandingPage.png');
@@ -126,7 +126,10 @@ nav{
   justify-content: center;
   align-content: center;
   text-align: center;
+  margin-bottom: 10%;
+  margin-top: 10%;
 }
+
 
 .second-section-welcome{
   position: relative;
@@ -215,27 +218,31 @@ nav{
   position: relative;
   top: 10%;
   width: 99vw;
-  height: 45vh;
+  /* height: 45vh; */
   background-color: rgba(234, 45, 83, 0.8);
   display: flex;
   justify-content: center;  
   flex-direction: row;
+  margin-bottom: 3%;
 }
 
 .third-sub-section-1 , .third-sub-section-2{
-  height: 100%;
+  /* height: 100%; */
   width: 37%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+}
+.third-sub-section-1{
+  align-items: start;
 }
 
 
 .third-sub-section-1 div:nth-child(3){
   display: flex;
   position: relative;
+  left: -10%;
   /* bottom: 21%; */
   /* right:7%; */
   /* right: 2%;
@@ -243,14 +250,16 @@ nav{
 }
 .third-sub-section-1 div:nth-child(1), .third-sub-section-1 div:nth-child(2){
   color: white;
-  font-size: larger;
+  /* font-size: larger; */
   text-align: left;
   padding-right: 3%;
+  ;
   /* position: relative;
   top: 20%; */
 }
 .third-sub-section-1 div:nth-child(1){
   padding-right: 42%;
+  font-size: 1.5em;
 }
 
 .third-sub-section-1 div:nth-child(2){
@@ -259,14 +268,16 @@ nav{
 }
 
 .third-sub-section-2 img{
-  height: 100%;
+  /* height: 100%; */
+  width:65%
 }
 
 .footer{
   position: relative;
   top: 11%;
   width: 99vw;
-  height: 30vh;
+  margin-bottom: 2%;
+  /* height: 30vh; */
   color: white;
   display: flex;
   flex-direction: column;
@@ -289,13 +300,15 @@ input{
 }
 input::placeholder{
   color: gray;
-  font-size: 1em;
+  font-size: 100%;
 }
 
 
 .entry-fields{
   display: flex;
   margin-top: 1%;
+  width: 31%;
+  font-size: 100%;
   
 }
 .entry-fields input{
@@ -303,23 +316,30 @@ input::placeholder{
   margin-left: 1vw;
   background-color: white;
   padding: 3.2%;
-  border-radius: 3px;
+  /* padding-left: 3%; */
+  border-radius: 1px;
 }
 .entry-fields div{
-  width: 7vw;
+  /* width: 7vw; */
   margin-left: 1vw;
   background-color: rgba(234, 45, 83, 1);
-  padding: 3.2%;
+  /* padding: 3.2%; */
   text-align: center;
-  border-radius: 3px;
+  border-radius: 1px;
   font-size: smaller;
   cursor: pointer;
+}
+.footer-span{
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer div:nth-child(3) img{
   padding-right: 5%;
   width: 5%;
-  height: 92%;
+  /* height: 92%; */
   cursor: pointer;
 }
 .footer div:nth-child(3){
@@ -339,10 +359,22 @@ input::placeholder{
 .toctic{
   color: rgba(234, 45, 83, 1);
 }
+input{
+  vertical-align: center;
+  padding:0;
+}
+/* .footer-span{
+  font-size: 1;
+} */
 
 
+@media screen and (max-width: 900px){
+  input::placeholder,.entry-fields{
+    font-size: 70%;
+  }
+}
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 800px) {
   /* .nav-links {
     display: none;
   } */
@@ -351,6 +383,39 @@ input::placeholder{
     font-size: 25px;
     
    }
+   .footer div:nth-child(4), .footer div:nth-child(5) {
+    font-size: x-small;
+}
+   input::placeholder,.entry-fields{
+    font-size: 50%;
+  }
+  .second-section-welcome{
+    font-size: 300%
+  }
+  .second-section-text{
+    font-size: 0.5em;
+  }
+  .second-sub-heading{
+    font-size: 80%;
+  }
+  .red-list{
+    font-size: 0.5em;
+  }
+  .second-section{
+    border-radius: 20px;
+  }
+  .third-sub-section-1 div:nth-child(1) {
+    font-size: small;
+  }
+  .third-sub-section-1 div:nth-child(2) {
+    font-size: xx-large;
+  }
+  .signup{
+    font-size: 1.2em;  
+  }
+
+
+
 
   /* .second-section-welcome{
     font-size: 300%;  
@@ -361,22 +426,117 @@ input::placeholder{
   }  */
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
   .nav-links {
     display: none;
   }
-
-  .first-sub-section div:nth-child(1){
-    font-size: 15px;
+  
+  .footer div:nth-child(4), .footer div:nth-child(5) {
+    font-size: xx-small;
+}
+  .first-section, .third-section{
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;    
+  }
+  .first-section{
+    margin-left: 14%;
+  }
+  .threephones{
+    width: 150%;
+  }
+  .second-sub-parent{
+    flex-direction: column;
+    align-items: center;
+  }
+  .second-section{
+    width: 60%;
+    text-align: justify;
+    align-items: center;
+    margin-left: 20%;
+  }
+  .second-sub-section-2{
+    margin:0;
+  }
+  .third-sub-section-1{
+    margin-top: 5%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+  .third-sub-section-1 div:nth-child(1), .third-sub-section-1 div:nth-child(2){
+    margin: 0;
+    padding: 0;
+  }
+  .third-sub-section-1 div:nth-child(2){
+    margin-bottom: 5%;
+    font-size: 30px;
+  }
+  .third-sub-section-2 img{
+    width: 100%;
+  }
+  .third-sub-section-1 div:nth-child(1){
     
+    font-size: xx-small;
+  }
+/*   
+  input::placeholder,.entry-fields{
+    font-size: 60%;
+  } */
+  .entry-fields div{
+    font-size: 5px;
+    border-radius: 1px;
+  }
+  .entry-fields{
+    font-size: 5px;
+    width: 34%;
+  }
+  .signup{
+    font-size: 0.8em;  
+  }
+  /* .third-sub-section-1 div:nth-child(2) {
+    font-size: small;
+  } */
+  
+  /* .third-sub-section-1 div:nth-child(1) {
+    font-size: 0.5em;
+  } */
+  .entry-fields input{
+    min-width: none;
+    border-radius: 1px;
+  }
+  .first-sub-section div:nth-child(1){
+    font-size: 17px;
+    
+  }
+  .first-sub-section{
+    width: 80%;
+    text-align: center;
+  }
+  
+  .second-section{
+    border-radius: 20px;
   }
 
   .second-section-welcome{
-    font-size: 300%;  
+    font-size: 150%
   }
   .second-section-text{
-    font-size: 0.7em;
-    
+    font-size: 0.3em;
+  }
+  .second-sub-heading{
+    font-size: 50%;
+  }
+  .red-list{
+    font-size: 0.1em;
+  }
+  .footer-span{
+    font-size: xx-small;
+  }
+  .qr-code{
+    position: relative;
+    bottom: -10%;
   }
 }
 
