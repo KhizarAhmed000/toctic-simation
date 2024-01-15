@@ -4,7 +4,6 @@
 
 
 body {
-    height: 300vh;
     margin: 0; /* Remove default body margin */
     padding: 0; /* Remove default body padding */
     background-image: url('../../assets/LandingPage.png');
@@ -13,7 +12,14 @@ body {
     /* background-repeat: no-repeat; */
     /* Optional: to keep the background fixed while scrolling */
   } 
-
+  .homeContainer{
+    height: 300vh;
+    overflow-x: hidden;
+  }
+  .mainContainer{
+    height: auto;
+    overflow-x: hidden;
+}
 nav{
   display: flex;
   align-items: flex-end;
@@ -34,6 +40,20 @@ nav{
   top: 5%;
   cursor: pointer;
   
+}
+.logo2{
+  height: auto;
+  padding-left: 6%;
+  position: relative;
+  /* top: 7%; */
+  bottom: 10%;
+  left:2%;
+  cursor: pointer;
+}
+.qr-code2{
+
+  padding-right: 93px;
+  position:relative;
 }
 .nav-links div{
   color: white;

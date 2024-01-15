@@ -19,7 +19,7 @@ import Header from '../../components/Header'
 
 export default function Home() {
   return (
-    <body>
+    <body className='homeContainer'>
         <nav>
         
           <img src={logo} alt='website logo' className='logo' />
