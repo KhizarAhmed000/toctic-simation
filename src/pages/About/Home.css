@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=PT+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&family=PT+Sans&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=PT+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&family=PT+Sans&display=swap");
 
 body {
   /* height: 300vh; */
@@ -8,7 +7,7 @@ body {
   /* Remove default body margin */
   padding: 0;
   /* Remove default body padding */
-  background-image: url('../../assets/LandingPage.png');
+  background-image: url("../../assets/LandingPage.png");
   background-size: 100% auto;
   /* Cover width, overflow height */
   font-family: Inter;
@@ -16,10 +15,82 @@ body {
   /* background-repeat: no-repeat; */
   /* Optional: to keep the background fixed while scrolling */
 }
-body::-webkit-scrollbar{
-  display: none;
+
+.about-us-text {
+  color: #ea2d53;
+  font-size: 400%;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
 }
 
+.about-us-body {
+  color: #fff;
+  text-align: center;
+  font-size: 150%;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 50%;
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  left: 25%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.about-us-box {
+  border-radius: 60px;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0px 4px 130px 0px rgba(0, 0, 0, 0.43);
+  backdrop-filter: blur(40px);
+  text-align: left;
+  padding: 5%;
+  width: 40%;
+  position: relative;
+  left: 10%;
+  padding-right: 10%;
+  margin: 15% 0;
+  z-index: 0;
+}
+
+.about-us-box div:nth-child(1) {
+  color: #ea2d53;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.about-us-box div:nth-child(2) {
+  color: white;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.about-section{
+  display: inline-flex;
+  justify-content: center;
+}
+.aboutusPhone{
+  width: 25%;
+  height: fit-content;
+  z-index: 1;
+  position: relative;
+  bottom: 10%;
+  bottom: 44px;
+  right: 40px;
+}
+
+.aboutusImg {
+  width: 60%;
+  position: relative;
+  left: 20%;
+}
 nav {
   display: flex;
   align-items: flex-start;
@@ -56,7 +127,6 @@ nav {
   position: relative;
   top: 5%;
   cursor: pointer;
-
 }
 
 .nav-links div {
@@ -111,7 +181,6 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
 
 .first-sub-section div:nth-child(1) {
@@ -144,7 +213,6 @@ nav {
   height: 68%;
   padding-top: 3.5%;
   cursor: pointer;
-
 }
 
 .second-section {
@@ -154,7 +222,7 @@ nav {
   top: 3%;
   margin-left: 14.5vw;
   border-radius: 30px;
-  background-color: #FFD9E0;
+  background-color: #ffd9e0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -164,20 +232,18 @@ nav {
   margin-top: 10%;
 }
 
-
 .second-section-welcome {
   position: relative;
   top: 5%;
 
   /* height: 20%; */
-  color: #EA2D53;
+  color: #ea2d53;
   font-size: 500%;
   font-weight: bold;
   border-radius: inherit;
 }
 
 .second-section-text {
-
   /* height: 15%; */
   border-radius: inherit;
   font-size: 1em;
@@ -185,9 +251,7 @@ nav {
   top: 3%;
   padding-left: 13%;
   padding-right: 13%;
-  
 }
-
 
 .second-sub-parent {
   /* height: 65%; */
@@ -208,7 +272,6 @@ nav {
   padding-left: 13%;
   padding-top: 2%;
   /* justify-content: space-evenly; */
-
 }
 
 .second-sub-section-1 div {
@@ -234,14 +297,12 @@ nav {
   margin-right: 1em;
 }
 
-
 .second-sub-section-2 {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
   margin-right: 5%;
-
 }
 
 .second-sub-section-2 img {
@@ -278,7 +339,6 @@ nav {
   align-items: start;
 }
 
-
 .third-sub-section-1 div:nth-child(3) {
   display: flex;
   position: relative;
@@ -295,7 +355,6 @@ nav {
   /* font-size: larger; */
   text-align: left;
   padding-right: 3%;
-  ;
   /* position: relative;
   top: 20%; */
 }
@@ -312,7 +371,7 @@ nav {
 
 .third-sub-section-2 img {
   /* height: 100%; */
-  width: 65%
+  width: 65%;
 }
 
 .footer {
@@ -328,12 +387,10 @@ nav {
   align-items: center;
 }
 
-
 .signup {
   font-size: 1.7em;
   font-weight: 400;
   margin: 1%;
-
 }
 
 input {
@@ -347,13 +404,11 @@ input::placeholder {
   font-size: 100%;
 }
 
-
 .entry-fields {
   display: flex;
   margin-top: 1%;
   width: 31%;
   font-size: 100%;
-
 }
 
 .entry-fields input {
@@ -420,9 +475,7 @@ input {
   font-size: 1;
 } */
 
-
 @media screen and (max-width: 900px) {
-
   input::placeholder,
   .entry-fields {
     font-size: 70%;
@@ -436,7 +489,6 @@ input {
 
   .first-sub-section div:nth-child(1) {
     font-size: 25px;
-
   }
 
   .footer div:nth-child(4),
@@ -450,7 +502,7 @@ input {
   }
 
   .second-section-welcome {
-    font-size: 300%
+    font-size: 300%;
   }
 
   .second-section-text {
@@ -481,9 +533,6 @@ input {
     font-size: 1.2em;
   }
 
-
-
-
   /* .second-section-welcome{
     font-size: 300%;  
   }
@@ -494,9 +543,6 @@ input {
 }
 
 @media screen and (max-width: 500px) {
-
-
-
   .nav-links {
     position: fixed;
     left: -100%;
@@ -510,7 +556,7 @@ input {
   }
 
   .test {
-    background-color: #EA2D53;
+    background-color: #ea2d53;
   }
 
   .hamburger {
@@ -551,7 +597,7 @@ input {
 
   .first-section {
     width: 86%;
-    margin: 10% 0px 0px 7%
+    margin: 10% 0px 0px 7%;
   }
 
   .threephones {
@@ -575,13 +621,12 @@ input {
   }
 
   .second-sub-section-1 {
-    padding-left: 31%
+    padding-left: 31%;
   }
 
   .second-sub-heading {
     position: relative;
     left: -20%;
-
   }
 
   .third-sub-section-1 {
@@ -608,7 +653,6 @@ input {
   }
 
   .third-sub-section-1 div:nth-child(1) {
-
     font-size: small;
   }
 
@@ -649,7 +693,6 @@ input {
 
   .first-sub-section div:nth-child(1) {
     font-size: 30px;
-
   }
 
   .first-sub-section {
@@ -663,7 +706,7 @@ input {
   }
 
   .second-section-welcome {
-    font-size: 220%
+    font-size: 220%;
   }
 
   .second-section-text {
@@ -740,7 +783,6 @@ input {
   background-color: #ffffff;
   margin: 2.5px 0;
   transition: 0.4s;
-
 }
 
 .navbar {
@@ -766,11 +808,7 @@ input {
   background-color: #181818;
 }
 
-
-
-
 @media screen and (max-width: 500px) {
-
   .burger-container {
     display: block;
     position: fixed;

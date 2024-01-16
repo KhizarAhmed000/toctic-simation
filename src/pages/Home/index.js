@@ -14,7 +14,7 @@ import facebooklogo from '../../assets/fblogo.png'
 import youtubelogo from '../../assets/ytlogo.png'
 import linkedinlogo from '../../assets/linkedinlogo.png'
 import Header from '../../components/Header'
-
+import { useNavigate } from "react-router-dom";
 
 
 export default function Home() {
@@ -31,37 +31,41 @@ export default function Home() {
   //   navMenu.classList.toggle("active")
   // })
 
+  const navigate = useNavigate();
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
 
-  
+  const handleNavigate = () => {
+    navigate('/About');
+  }
 
   return (
-   <> 
-    <body>
+    <>
+      <body>
         <nav>
-        
-          <img src={logo} alt='website logo' className='logo' 
+
+          <img src={logo} alt='website logo' className='logo'
           // onClick={test}
           />
-          
+
           <div className='nav-links'>
-            <div>Home</div>
-            <div>Features</div>
-            <div>Shop</div>
-            <div>Downloads</div>
+            <div onClick={() => {
+              navigate('/')
+            }}
+            style={{color:'#ea2d53'}}
+            >Home</div>
+            <div onClick={() => {
+              navigate('/About')
+            }}>About</div>
+            <div onClick={() => {
+              navigate('/Downloads')
+            }}>Downloads</div>
           </div>
-          
+
           <img src={qrcode} alt='qr code' className='qr-code' />
-{/*           
-          <div className="hamburger" onClick={()=>setHambergActive(!hambergActive)}>
-            <span className='bar' ></span>
-            <span className='bar' ></span>
-            <span className='bar' ></span>
-          </div> */}
 
 
         </nav>
@@ -70,12 +74,12 @@ export default function Home() {
 
         <div className='first-section'>
           <div className='first-sub-section'>
-            <div> 
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            <div>
+              Unleash Your Creativity, Capture the Moment
             </div>
             <div>
-            <img src={playstorebutton} alt='play store button' className='playstorebutton'/>
-            <img src={appstore} alt='appstore button' />
+              <img src={playstorebutton} alt='play store button' className='playstorebutton' />
+              <img src={appstore} alt='appstore button' />
             </div>
           </div>
           <div className='first-sub-section'>
@@ -86,28 +90,31 @@ export default function Home() {
 
         <div className='second-section'>
           <div className='second-section-welcome'>Welcome</div>
-          <div className='second-section-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</div>
-          
+
+          <div className='second-section-text'>Welcome to a world where every second tells a story, and creativity knows no limits. Crafted with precision on American soil, our platform prioritizes your security with a commitment to excellence. Rest easy, knowing your creative haven is rooted in trust, far from distant shores</div>
+
+
+
           <div className='second-sub-parent'>
             <div className='second-sub-section second-sub-section-1'>
-              <div className='second-sub-heading'>Making new friends is as simple as:</div>
+              <div className='second-sub-heading'>Join us and tell your stories to the world</div>
               <span className='red-list'>
                 <div>
-                  <img src={redarrow} alt=''></img> Hanging out for lunch
+                  <img src={redarrow} alt=''></img> Explore trending Content
                 </div>
                 <div>
-                  <img src={redarrow} alt=''></img> Enjoying a few good books
+                  <img src={redarrow} alt=''></img> Express yourself with us
                 </div>
                 <div>
-                  <img src={redarrow} alt=''></img> Exploring the city
+                  <img src={redarrow} alt=''></img> Connect and Collaborate
                 </div>
                 <div>
-                  <img src={redarrow} alt=''></img> Catching a movie together
+                  <img src={redarrow} alt=''></img> Elevate Your Presence
                 </div>
                 <div>
-                  <img src={redarrow} alt=''></img> Grabbing a few drinks
+                  <img src={redarrow} alt=''></img> Get the Spotlight you deserve
                 </div>
-              </span>     
+              </span>
             </div>
             <div className='second-sub-section second-sub-section-2'>
               <img src={onephone} alt='' />
@@ -117,16 +124,16 @@ export default function Home() {
 
         <div className='third-section'>
           <div className='third-sub-section-1'>
-            <div>Are you Ready for</div>
+            <div>Are you Ready To</div>
             <div>Download</div>
             <div>
-            <img src={playstorebutton} alt='play store button' className='playstorebutton'/>
-            <img src={appstore} alt='appstore button' />
+              <img src={playstorebutton} alt='play store button' className='playstorebutton' />
+              <img src={appstore} alt='appstore button' />
             </div>
           </div>
-          
+
           <div className='third-sub-section-2'>
-            <img src={twophones} alt=''/>
+            <img src={twophones} alt='' />
           </div>
         </div>
 
@@ -136,7 +143,7 @@ export default function Home() {
             <input type='email' placeholder='Enter your email here' />
             <div className='footer-span'>Sign up now</div>
           </div>
-          
+
           <div>
             <img src={instagramlogo} alt='' />
             <img src={twitterlogo} alt='' />
@@ -144,27 +151,27 @@ export default function Home() {
             <img src={youtubelogo} alt='' />
             <img src={linkedinlogo} alt='' />
           </div>
-          <div>© 2022 WIDAR produced by <span className='toctic'>Toctic</span>, Inc.</div>
-          <div>Privacy Policy | Terms of Service (Global) | Terms of Service (Japan)</div>
-          
+          <div>© 2022 WIDAR produced by <span className='toctic'>TocTic</span>, Inc.</div>
+          <div>Privacy Policy | Terms of Service (Global)</div>
+
         </div>
 
         <div className={`burger-container ${menuOpen ? 'open' : ''}`}>
-      <div className="burger-menu" onClick={toggleMenu}>
-        <div className="bar1"></div>
-        <div className="bar2"></div>
-        <div className="bar3"></div>
-      </div>
+          <div className="burger-menu" onClick={toggleMenu}>
+            <div className="bar1"></div>
+            <div className="bar2"></div>
+            <div className="bar3"></div>
+          </div>
 
-      <div className="navbar">
-        <a href="#">Home</a>
-        <a href="#">Features</a>
-        <a href="#">Shop</a>
-        <a href="#">Downloads</a>
-      </div>
-    </div>
+          <div className="navbar">
+            <a href="#">Home</a>
+            <a href="#">Features</a>
+            <a href="#">Shop</a>
+            <a href="#">Downloads</a>
+          </div>
+        </div>
 
-    </body>
+      </body>
     </>
   )
 }

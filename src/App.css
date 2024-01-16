@@ -37,4 +37,6 @@
   .burger-container.open .navbar {
     display: flex;
   }
-  
+body::-webkit-scrollbar{
+  display: none;
+}
